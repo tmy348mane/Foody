@@ -1,0 +1,123 @@
+.profileCover {
+    position: relative;
+    top: 0;
+    background-image: linear-gradient(to bottom right, #9BE15D, #00E3AE);
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.dashDiv {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.profilePicture {
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 150px;
+    top: -150px;
+    left: 41.4%;
+    width: 250px;
+    height: 250px;
+    z-index: 10;
+    /* box-shadow: 5px 10px 18px #888888; */
+}
+
+.userBrief {
+    position: relative;
+    top: 6.5em;
+    left: 30.3em;
+    z-index: 20;
+    width: 30em;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.userBrief h3 {
+    font-size: 40px;
+    color: darkslategray;
+}
+
+.userOrders {
+    padding-left: 220px;
+    padding-right: 220px;
+}
+
+.order {
+    height: 20em;
+    width: 19em;
+    display: inline-block;
+    margin-top: 7em;
+    margin-left: 1em;
+    margin-right: 1em;
+    background: rgba( 255, 255, 255, 0.40);
+    box-shadow: 5px 10px 18px rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 11.0px);
+    -webkit-backdrop-filter: blur( 11.0px);
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.order img {
+    margin-top: 0.9em;
+    margin-left: 79px;
+    width: 9em;
+    height: 9em;
+}
+
+.order img:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.order h4 {
+    text-align: center;
+    font-size: 25px;
+    color: darkslategray;
+    margin-bottom: 0.5em;
+}
+
+.order h5 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: darkslategray;
+}
+
+.order h6 {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    padding-left: 4.2em;
+    padding-right: 4.2em;
+    color: darkslategray;
+}
+
+.logOut {
+    position: relative;
+    top: 3em;
+    margin-bottom: 3em;
+    width: 20em;
+    height: 3em;
+    width: 237px;
+    bottom: 20px;
+    left: 622px;
+    cursor: pointer;
+    font-family: openSansSemiBold;
+    color: darkslategrey;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #9BE15D, #00E3AE);
+    text-align: center;
+}
+
+.logOut:focus {
+    outline: 0;
+}

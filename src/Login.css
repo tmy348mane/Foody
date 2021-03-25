@@ -1,0 +1,165 @@
+ .VectorOne {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 25em;
+     height: 20em;
+     z-index: 20;
+ }
+ 
+ .VectorTwo {
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 25em;
+     height: 25em;
+ }
+ 
+ .MainDiv {
+     z-index: 20;
+     position: relative;
+     display: grid;
+     justify-content: center;
+     top: 7em;
+     background: rgba(255, 255, 255, 0.1);
+     backdrop-filter: blur(10px);
+     width: 80vh;
+     height: 70vh;
+     border-radius: 50px;
+ }
+ 
+ .FoodySmallIcon {
+     position: relative;
+     top: 3em;
+     left: 6em;
+     height: 10vh;
+ }
+ 
+ .LoginForm {
+     top: 12em;
+     left: 9em;
+     display: grid;
+     justify-content: center;
+ }
+ 
+ ::placeholder {
+     font-size: 1.5em;
+ }
+ 
+ .UserIcon {
+     position: absolute;
+     top: 12.9em;
+     left: 10.35em;
+     width: 2em;
+     height: 2em;
+     opacity: 0;
+ }
+ 
+ .PasswordIcon {
+     opacity: 0;
+     width: 2em;
+     height: 1.5em;
+ }
+ 
+ .UserNameInput {
+     background: transparent;
+     position: relative;
+     top: 2em;
+     text-align: center;
+     margin: 0.5em;
+     height: 3em;
+     width: 22em;
+     border: 1px;
+     border-radius: 30px;
+     color: azure;
+ }
+ 
+ .UserNameInput:focus {
+     outline: 0;
+ }
+ 
+ .LineOne {
+     z-index: 10;
+     position: absolute;
+     top: 14.9em;
+     left: 10.35em;
+     width: 17em;
+     border-bottom: 4px solid #6DE175;
+ }
+ 
+ .PasswordInput {
+     background: transparent;
+     position: relative;
+     top: 1.1em;
+     text-align: center;
+     margin-top: 0.5em;
+     margin-bottom: 2em;
+     height: 3em;
+     width: 22em;
+     border: 1px;
+     border-radius: 30px;
+     color: azure;
+ }
+ 
+ .PasswordInput:focus {
+     outline: 0;
+ }
+ 
+ .LineTwo {
+     z-index: 10;
+     position: absolute;
+     top: 18.2em;
+     left: 10.35em;
+     width: 17em;
+     border-bottom: 4px solid #6DE175;
+ }
+ 
+ .SubmitButton {
+     cursor: pointer;
+     margin: 0.5em;
+     height: 3.5em;
+     width: 22.5em;
+     border: 0px;
+     border-radius: 30px;
+     color: white;
+     background: linear-gradient(to bottom right, #FF9A44, #FC6076);
+ }
+ 
+ .SubmitButton:focus {
+     outline: 0;
+ }
+ 
+ .SubmitButton p {
+     margin-top: 0.5em;
+     margin-bottom: 0.5em;
+     font-size: large;
+ }
+ 
+ .SignUpAnchor {
+     left: 2.5em;
+     color: white;
+     text-align: center;
+     height: 4vh;
+ }
+ 
+ .Copyright {
+     opacity: 0.5;
+     color: white;
+     text-align: center;
+ }
+ 
+ .VectorThree {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 25em;
+     height: 18em;
+ }
+ 
+ .VectorFour {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     width: 25em;
+     height: 20em;
+ }

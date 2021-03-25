@@ -1,0 +1,70 @@
+.mainCatlog {
+    display: inline-block;
+    justify-content: center;
+}
+
+.Background {
+    margin-top: 2em;
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+.Background button:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.Background p {
+    position: absolute;
+    width: 30em;
+    text-align: center;
+    color: azure;
+    top: 15em;
+    left: 37em;
+    padding-left: 5em;
+    padding-right: 5em;
+    font-size: 20px;
+}
+
+.Background button {
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    color: azure;
+    top: 21.5em;
+    left: 46.5em;
+    width: 13em;
+    height: 2.5em;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(to bottom right, #FF9A44, #FC6076);
+}
+
+.Background button:focus {
+    outline: 0;
+}
+
+
+/*
+.line {
+    position: absolute;
+    top: 260px;
+    left: 61.5em;
+    width: 10em;
+    height: 47px;
+    border-bottom: 2px solid whitesmoke;
+    
+}*/
+
+.backgroundImg {
+    border-radius: 30px;
+    height: 81vh;
+    width: 80em;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.restross {
+    margin-top: 10em;
+    margin-left: 3.5em;
+}

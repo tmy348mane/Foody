@@ -1,0 +1,34 @@
+.menuItems {
+    display: grid;
+    justify-content: center;
+    margin-top: 1.5em;
+    border-radius: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 35em;
+    height: 94%;
+}
+
+.menuItems h2 {
+    padding-left: 0.9em;
+    margin-bottom: 0.5em;
+    color: darkslategrey;
+}
+
+.menuItems h3 {
+    padding-left: 1em;
+    color: grey;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.menuItems h4 {
+    padding-left: 1.2em;
+    color: grey;
+    width: 21.5em;
+    font-size: 12px;
+    font-family: openSansSemiBold;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}

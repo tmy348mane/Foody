@@ -1,0 +1,130 @@
+.vectorBackground {
+    margin-top: 2em;
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+.backgroundImage {
+    background: url("./coverOne.png");
+    display: flex;
+    border-radius: 20px;
+    height: 40vh;
+    width: 80em;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.circleOne {
+    position: absolute;
+    top: 10px;
+    left: 630px;
+    background-image: linear-gradient(to right, #9BE15D, #00E3AE);
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+}
+
+.circleTwo {
+    position: absolute;
+    top: 20px;
+    left: 1199px;
+    background-image: linear-gradient(to right, #9BE15D, #00E3AE);
+    border-radius: 50%;
+    width: 106px;
+    height: 106px;
+}
+
+.circleThree {
+    position: absolute;
+    top: 180px;
+    left: 1000px;
+    background-image: linear-gradient(to right, #9BE15D, #00E3AE);
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+}
+
+.restroIntro {
+    position: absolute;
+    top: 2em;
+    left: 457px;
+    width: 53em;
+    height: 14em;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 12.5px);
+    -webkit-backdrop-filter: blur( 12.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.restroImage {
+    position: absolute;
+    top: 2em;
+    margin-left: 22px;
+    height: 14em;
+    width: 20em;
+    background: rgba( 255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 12.5px);
+    -webkit-backdrop-filter: blur( 12.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.restroImage img {
+    border-radius: 10px;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+    height: 11em;
+    width: 17em;
+}
+
+.intro {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.intro h2 {
+    font-family: freeSerif;
+    margin: 0;
+    font-size: 40px;
+    color: #4d4d52;
+}
+
+.intro h3 {
+    padding-left: 3px;
+    font-family: freeSerif;
+    font-size: 13px;
+    color: gray;
+}
+
+.rating {
+    position: relative;
+    display: flex;
+}
+
+.verticleLineOne {
+    position: absolute;
+    top: 12px;
+    left: 85px;
+    height: 1.8em;
+    border-left: 1px solid gray;
+}
+
+.verticleLineTwo {
+    position: absolute;
+    top: 12px;
+    left: 14.5em;
+    height: 1.8em;
+    border-left: 1px solid gray;
+}
+
+.rating h4 {
+    padding-left: 3px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 5em;
+    color: #4d4d52;
+}

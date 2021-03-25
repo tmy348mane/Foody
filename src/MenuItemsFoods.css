@@ -1,0 +1,40 @@
+.food {
+    display: flex;
+    border-radius: 30px;
+    margin-bottom: 19.920px;
+    width: 33em;
+    height: 11em;
+    background: rgba( 255, 255, 255, 0.30);
+    backdrop-filter: blur( 12.5px);
+    -webkit-backdrop-filter: blur( 12.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.42);
+}
+
+.food img {
+    margin-top: 0.9em;
+    margin-left: 3em;
+    width: 9em;
+    height: 9em;
+}
+
+.food img:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+
+.food button {
+    margin-left: 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 100px;
+    font-family: openSansSemiBold;
+    color: darkslategrey;
+    background-image: linear-gradient(to right, #9BE15D, #00E3AE);
+    cursor: pointer;
+}
+
+.food button:focus {
+    outline: 0;
+}

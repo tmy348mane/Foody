@@ -1,0 +1,38 @@
+.foodyIcon {
+    position: absolute;
+    top: 1em;
+    left: 1.5%;
+    height: 50px;
+    width: 80px;
+}
+
+.NavBar {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.navBar {
+    position: absolute;
+    left: 58%;
+    font-size: large;
+    color: whitesmoke;
+}
+
+.navList {
+    display: flex;
+}
+
+.navItem {
+    cursor: pointer;
+    margin: 1em;
+    padding: 10px;
+}
+
+.navItem:hover {
+    background-image: linear-gradient(to bottom right, #9BE15D, #00E3AE);
+    border-radius: 30px;
+}

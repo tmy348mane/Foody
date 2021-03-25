@@ -1,0 +1,48 @@
+.subTotal {
+    display: flex;
+}
+
+.subTotal h3 {
+    font-family: openSansBold;
+    font-size: 20px;
+    padding-top: 0.2em;
+    padding-left: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    margin-right: 5.27em;
+    color: darkslategrey;
+}
+
+.subTotal h4 {
+    font-size: 12px;
+    font-family: openSansSemiBold;
+    color: grey;
+    padding-left: 2.5em;
+    margin: 0;
+}
+
+.checkOut {
+    width: 20em;
+    height: 3em;
+    cursor: pointer;
+    font-family: openSansSemiBold;
+    color: darkslategrey;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #9BE15D, #00E3AE);
+    text-align: center;
+    margin-top: 2em;
+    margin-left: 2em;
+    transition-property: transform, box-shadow;
+    transition-duration: .3s;
+}
+
+.checkOut:focus {
+    outline: 0;
+}
+
+.checkOut:active {
+    transform: scale(.9);
+    box-shadow: 0 3px 15px -2px;
+}

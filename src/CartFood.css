@@ -1,0 +1,57 @@
+.cartFood {
+    display: flex;
+    height: 60px;
+}
+
+.cartFood h3 {
+    font-family: openSansSemiBold;
+    font-size: 15px;
+    padding-top: 0.2em;
+    padding-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 5px;
+    margin-top: 7px;
+    color: darkslategrey;
+}
+
+.cartFood h4 {
+    margin-top: 10px;
+    margin-bottom: 21.280px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: darkslategrey;
+}
+
+.line {
+    display: none;
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    width: 18em;
+    opacity: 0.5;
+    border-bottom: 1px solid darkslategrey;
+}
+
+.cartFood button {
+    cursor: pointer;
+    height: 21px;
+    width: 21px;
+    border: none;
+    border-radius: 12px;
+    background: rgba( 255, 255, 255, 0.05);
+    backdrop-filter: blur( 12.5px);
+    -webkit-backdrop-filter: blur( 12.5px);
+    border: 1px solid rgba( 255, 255, 255, 0.42);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 21.280px;
+}
+
+.cartFood button:focus {
+    background-image: linear-gradient(to right, #9BE15D, #00E3AE);
+    outline: 0;
+}
+
+.cartFood button:hover {
+    background-image: linear-gradient(to right, #9BE15D, #00E3AE);
+}

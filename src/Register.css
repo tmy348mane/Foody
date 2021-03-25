@@ -1,0 +1,193 @@
+.mainImg {
+    position: absolute;
+    width: 92%;
+    height: 100vh;
+    opacity: 0;
+}
+
+.vectorOne {
+    position: absolute;
+    height: 100vh;
+    width: 60%;
+    z-index: -20;
+}
+
+.foodImg {
+    z-index: 20;
+    position: absolute;
+}
+
+.formLines {
+    position: absolute;
+    top: 15%;
+    left: 53%;
+    width: 40%;
+    height: 70%;
+}
+
+.lineOne {
+    position: absolute;
+    top: 5.5em;
+    left: 1.8em;
+    width: 35em;
+    border-bottom: 4px solid #6DE175;
+}
+
+.lineTwo {
+    position: absolute;
+    left: 1.8em;
+    top: 10.5em;
+    width: 35em;
+    border-bottom: 4px solid #6DE175;
+}
+
+.lineThree {
+    position: absolute;
+    left: 1.8em;
+    top: 15.5em;
+    width: 35em;
+    border-bottom: 4px solid #6DE175;
+}
+
+.lineFour {
+    position: absolute;
+    left: 1.8em;
+    top: 20.5em;
+    width: 15.2em;
+    border-bottom: 4px solid #6DE175;
+}
+
+.lineFive {
+    position: absolute;
+    left: 20.8em;
+    top: 20.5em;
+    width: 15.2em;
+    border-bottom: 4px solid #6DE175;
+}
+
+.registerForm {
+    position: absolute;
+    top: 15%;
+    left: 53%;
+    width: 40%;
+    height: 70%;
+}
+
+.register {
+    margin-top: 1em;
+    display: grid;
+    height: 60.5%;
+}
+
+.pass {
+    display: flex;
+    justify-content: center;
+}
+
+.emailInput {
+    background: transparent;
+    padding-left: 50px;
+    color: #757575;
+    font-size: 30px;
+    height: 70px;
+    width: 20em;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.emailInput:focus {
+    outline: 0;
+}
+
+.firstNameInput {
+    background: transparent;
+    padding-left: 50px;
+    color: #757575;
+    font-size: 30px;
+    height: 70px;
+    width: 20em;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.firstNameInput:focus {
+    outline: 0;
+}
+
+.lastNameInput {
+    background: transparent;
+    padding-left: 50px;
+    color: #757575;
+    font-size: 30px;
+    height: 70px;
+    width: 20em;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.lastNameInput:focus {
+    outline: 0;
+}
+
+.passwordInput {
+    background: transparent;
+    padding-left: 50px;
+    color: #757575;
+    font-size: 30px;
+    height: 70px;
+    margin-right: 0.7em;
+    width: 9em;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.passwordInput:focus {
+    outline: 0;
+}
+
+.confirmPasswordInput {
+    background: transparent;
+    color: #757575;
+    font-size: 30px;
+    height: 70px;
+    margin-left: 0.7em;
+    width: 9em;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.confirmPasswordInput:focus {
+    outline: 0;
+}
+
+.submitButton {
+    cursor: pointer;
+    position: absolute;
+    top: 22em;
+    left: 15em;
+    margin-top: 7em;
+    height: 5em;
+    width: 25em;
+    border: 0px;
+    border-radius: 40px;
+    color: white;
+    background: linear-gradient(to bottom right, #FF9A44, #FC6076);
+}
+
+.submitButton:focus {
+    outline: 0;
+}
+
+.submitButton p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: x-large;
+}
+
+.popOverEmail {
+    opacity: 0;
+}
+
+.popOverEmail:hover {
+    opacity: 1;
+}

@@ -1,0 +1,64 @@
+.restroName {
+    position: absolute;
+    top: 7.5em;
+    left: 3.3em;
+    font-family: freeSerifs;
+    color: gray;
+    text-align: center;
+}
+
+.firstRestroImage {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    border: none;
+    border-radius: 10px;
+    width: 17em;
+    height: 10em;
+}
+
+.firstRestro {
+    height: 25em;
+    width: 19em;
+    display: inline-block;
+    margin-top: 7em;
+    margin-left: 1em;
+    margin-right: 1em;
+    background: rgba( 255, 255, 255, 0.40);
+    box-shadow: 5px 10px 18px rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 11.0px);
+    -webkit-backdrop-filter: blur( 11.0px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.quickView {
+    position: absolute;
+    cursor: pointer;
+    top: 20.5em;
+    left: 4.5em;
+    border: none;
+    height: 2.5em;
+    width: 10em;
+    font-size: 15px;
+    border-radius: 20px;
+    color: azure;
+    background: linear-gradient(to bottom right, #9BE15D, #00E3AE);
+}
+
+.quickView:focus {
+    outline: 0;
+}
+
+.quickView:hover {
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.restroBrief {
+    position: absolute;
+    top: 14.2em;
+    font-family: freeSerifs;
+    color: grey;
+    text-align: center;
+}
