@@ -13,13 +13,28 @@ import Dashboard from "./Dashboard";
 import React, { Component } from "react";
 import axios from "axios";
 import Restraunt from "./Restraunt";
+import Admin from "./Admin";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+import CheckoutForm from "./CheckoutForm";
+import './CheckoutForm.css';
+
 
 class App extends Component {
+  componenDidMount() {
+  
+    // console.log(promiseVar);
+    // this.setState({
+    //   promise: promiseVar,
+    // });
+  }
+
   constructor(props) {
     super(props);
 
     this.state = {
-      restro:[],
+      promise:  "",
+      restro: [],
       restroMenu: [],
       restroShortName: "",
       isRestroMenuReady: false,
@@ -39,27 +54,26 @@ class App extends Component {
         console.log("restroName : " + restro);
 
         axios.post("http://localhost:5000/restraunts", restro).then((res) => {
-          this.setState(
-            {
-              restro:res.data,
-              restroMenu: res.data[0].menu,
-              isRestroMenuReady: true,
-            });
+          this.setState({
+            restro: res.data,
+            restroMenu: res.data[0].menu,
+            isRestroMenuReady: true,
+          });
         });
-      });
+      }
+    );
   }
 
   render() {
-    console.log("Email"+localStorage.getItem('email'));
+      const promise = loadStripe(
+        "pk_test_51Iae1bSDKl8GTPPMBASMWL68YHXFXhHrwmEWIGfDq4k51BpF1q6uX5FGjua0oAxHUkJeZV4FXqOKnPIbbD3dGsh500yPwIqif3"
+      );
+    console.log("promises" + this.state.promise);
     return (
       <Router>
         <div className="App">
           <Switch>
-            <Route
-              exact
-              path="/"
-              render={(props) => <Home/>}
-            ></Route>
+            <Route exact path="/" render={(props) => <Home />}></Route>
 
             <Route
               exact
@@ -68,8 +82,23 @@ class App extends Component {
             ></Route>
 
             <Route
+              exact
+              path="/checkoutForm"
+              render={(props) => (
+                <Elements stripe={promise}>
+                  <CheckoutForm />
+                </Elements>
+              )}
+            ></Route>
+
+            <Route
               path="/restrauntMenu"
-              render={(props) => <Restraunt hotel={this.state.restro} log={this.state.restroMenu} />}
+              render={(props) => (
+                <Restraunt
+                  hotel={this.state.restro}
+                  log={this.state.restroMenu}
+                />
+              )}
             ></Route>
 
             <Route exact path="/login">
@@ -78,6 +107,10 @@ class App extends Component {
 
             <Route exact path="/profile">
               <Dashboard />
+            </Route>
+
+            <Route exact path="/admin">
+              <Admin />
             </Route>
 
             <Route exact path="/aboutus">

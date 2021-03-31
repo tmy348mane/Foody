@@ -90,8 +90,9 @@ export class Login extends Component {
               );
             }
           );
-
-          if (this.state.isLoggedIn) {
+          if (localStorage.getItem("email") === "admin@foody.com") {
+            window.location.href = "/admin";
+          } else if (this.state.isLoggedIn) {
             window.location.href = "/catlog";
           }
         }

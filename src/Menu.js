@@ -17,16 +17,6 @@ class Menu extends Component {
   }
 
   componentDidMount(props) {
-    // axios.get("http://localhost:5000/RestroFood").then((res) => {
-    //   console.log(res.data);
-    //   const eml = localStorage.getItem("email");
-    //   console.log(eml);
-    //   console.log();
-    //   this.setState({
-    //     foodData: res.data,
-    //   });
-    // });
-
     this.setState(
       {
         foodData: this.props.dishcatlog,
@@ -37,7 +27,7 @@ class Menu extends Component {
 
   addToCart(e, fName) {
     let currentFood = this.state.foodData.find(
-      (food) => food.foodPrice === fName
+      (food) => food.foodName === fName
     );
     this.setState({
       cartArray: [...this.state.cartArray, currentFood],

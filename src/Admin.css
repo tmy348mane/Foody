@@ -1,0 +1,217 @@
+.adminProfileCover {
+    position: relative;
+    top: 0;
+    background: linear-gradient(to bottom right, #FF9A44, #FC6076);
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+}
+
+.adminDashDiv {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 70vh;
+}
+
+.profilePicture {
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 150px;
+    top: -150px;
+    left: 41.4%;
+    width: 250px;
+    height: 250px;
+    z-index: 10;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.showData {
+    margin: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.showButton {
+    margin: 1em;
+    height: 35px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    color: darkslategrey;
+    cursor: pointer;
+}
+
+.showButton:hover {
+    background-color: #05e8ba;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.showButton:focus {
+    outline: 0;
+    background-color: #05e8ba;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.adminTitle {
+    position: relative;
+    top: 2.5em;
+    font-size: 40px;
+    color: darkslategray;
+    text-align: center;
+    z-index: 20;
+}
+
+.userContent {
+    display: grid;
+    justify-content: center;
+}
+
+.adminUserOrders {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    justify-content: center;
+}
+
+.editForm form {
+    display: grid;
+    justify-content: center
+}
+
+.editForm form input {
+    display: grid;
+    margin: 10px;
+    width: 400px;
+    height: 30px;
+    border: 1px solid #98FF98;
+    border-radius: 5px;
+}
+
+.editForm form input:focus {
+    outline: 0;
+    border: 1px solid #FC6076;
+}
+
+.editForm form label {
+    color: darkslategrey;
+    display: grid;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.editForm form button {
+    margin: 10px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    color: darkslategrey;
+    background-image: linear-gradient(to bottom right, #9BE15D, #00E3AE);
+    cursor: pointer;
+}
+
+.editForm form button:focus {
+    outline: 0;
+}
+
+.adminUserOrders table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.adminUserOrders table th {
+    height: 30px;
+    color: darkslategrey;
+    padding: 15px;
+    text-align: left;
+}
+
+.tableTitle {
+    background: linear-gradient(to right, #9BE15D, #00E3AE);
+}
+
+.tableContent {}
+
+.adminUserOrders table td {
+    height: 30px;
+    color: darkslategrey;
+    padding-right: 50px;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.adminEdit {
+    width: 55px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #05e8ba;
+    color: darkslategrey;
+    cursor: pointer;
+}
+
+.addUserAdmin {
+    width: 20%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    color: darkslategrey;
+    cursor: pointer;
+    margin: 1em 21.5em;
+}
+
+.addUserAdmin:focus {
+    outline: 0;
+}
+
+.addUserAdmin:hover {
+    background-color: #05e8ba;
+}
+
+.adminEdit:focus {
+    outline: 0;
+}
+
+.adminDelete {
+    width: 55px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FC6076;
+    color: azure;
+    cursor: pointer;
+}
+
+.adminDelete:focus {
+    outline: 0;
+}
+
+.adminlogOut {
+    position: absolute;
+    top: 2em;
+    left: 20em;
+    margin-bottom: 5em;
+    height: 3em;
+    width: 237px;
+    bottom: 80px;
+    cursor: pointer;
+    font-family: openSansSemiBold;
+    color: darkslategrey;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #FF9A44, #FC6076);
+    text-align: center;
+}
+
+.logOut:focus {
+    outline: 0;
+}

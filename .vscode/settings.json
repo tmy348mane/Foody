@@ -15,5 +15,11 @@
         "titleBar.inactiveBackground": "#06bf8b99",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#06BF8B"
+    "peacock.color": "#06BF8B",
+    "spellright.language": [],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ]
 }

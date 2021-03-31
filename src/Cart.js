@@ -38,7 +38,8 @@ class Cart extends Component {
         orders: this.props.foodInCart,
         subTotal: this.state.SUBTOTAL,
       };
-      axios.post("http://localhost:5000/saveOrders", userOrders);
+      // axios.post("http://localhost:5000/saveOrders", userOrders);
+
       window.location.href = "/catlog";
     }
   }

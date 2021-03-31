@@ -11,7 +11,7 @@ class Dashboard extends Component {
 
     this.state = {
       orders: [],
-      userName:""
+      userName: "",
     };
     this.logOut = this.logOut.bind(this);
   }
@@ -21,19 +21,28 @@ class Dashboard extends Component {
     const Email = {
       email: localStorage.getItem("email"),
     };
-
-    console.log("Email " + Email);
-    axios.post("http://localhost:5000/userOrders", Email).then((res) => {
-      console.log("res " + res.data.orders[0].foodName);
-      this.setState({
-        orders: res.data.orders,
-        userName:localStorage.getItem('fullName')
-      })
-    });
+    if(localStorage.getItem("email") === null ){
+      window.location.href ="/login";
+    }
+    if (
+      localStorage.getItem("email") === "admin@foody.com" 
+    ) {
+      window.location.href = "/admin";
+    } else {
+      console.log("Email " + Email);
+      axios.post("http://localhost:5000/userOrders", Email).then((res) => {
+        console.log("res " + res.data.orders[0].foodName);
+        this.setState({
+          orders: res.data.orders,
+          userName: localStorage.getItem("fullName"),
+        });
+      });
+  }
   }
   logOut() {
     console.log("LogOut Button Clicked");
     localStorage.clear();
+    window.location.href = "/";
   }
 
   render() {
@@ -41,12 +50,14 @@ class Dashboard extends Component {
     console.log("First Name " + localStorage.getItem("userfirstName"));
 
     const ORDERS = this.state.orders.map((order) => {
-      return  <div className="order">
-                <img src={foodImage} alt=""></img>
-                <h4>{order.foodName}</h4>
-                <h6>{order.foodDescription}</h6>
-                <h5>&#8377; {order.foodPrice}</h5>
-              </div>;
+      return (
+        <div className="order">
+          <img src={foodImage} alt=""></img>
+          <h4>{order.foodName}</h4>
+          <h6>{order.foodDescription}</h6>
+          <h5>&#8377; {order.foodPrice}</h5>
+        </div>
+      );
     });
     return (
       <div className="dashboard">
@@ -72,31 +83,11 @@ class Dashboard extends Component {
           </div>
 
           <div className="userContent">
-            <div className="userOrders">
-              {ORDERS}
-              {/* <div className="order">
-                <img src={foodImage} alt=""></img>
-                <h4>Food Name</h4>
-                <h6>lorem ipsum dolor sit lorem ipsum dolor sit</h6>
-                <h5>&#8377; 100</h5>
-              </div>
-              <div className="order">
-                <img src={foodImage} alt=""></img>
-                <h4>Food Name</h4>
-                <h6>lorem ipsum dolor sit lorem ipsum dolor sit</h6>
-                <h5>&#8377; 100</h5>
-              </div>
-              <div className="order">
-                <img src={foodImage} alt=""></img>
-                <h4>Food Name</h4>
-                <h6>lorem ipsum dolor sit lorem ipsum dolor sit</h6>
-                <h5>&#8377; 100</h5>
-              </div> */}
-            </div>
+            <div className="userOrders">{ORDERS}</div>
           </div>
         </div>
 
-        <button className="logOut" onClick={this.logOut}>
+        <button className="logOut" onClick={(e) => this.logOut()}>
           Log Out
         </button>
       </div>
