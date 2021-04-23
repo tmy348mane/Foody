@@ -69,7 +69,7 @@ input {
 
 /* Buttons and links */
 
-button {
+.checkOutFormButton {
     background-image: linear-gradient(to right, #9BE15D, #00E3AE);
     font-family: Arial, sans-serif;
     color: darkslategrey;
